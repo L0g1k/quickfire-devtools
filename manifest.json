@@ -1,0 +1,33 @@
+﻿{
+    "name": "pixelJET for Chrome™ Developer Tools",
+    "version": "0.2",
+    "description": "Integrates the Chrome™ Developer Tools into the pixelJET development environment",
+	"permissions": [
+    	"contextMenus"
+  	],
+    "devtools_page": "devtools.html",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "page_action": {
+    "default_icon": {                   
+      "19": "cloud19.png",          
+      "38": "cloud38.png"           
+    },
+    "default_title": "Click to save changes"    
+  },
+   "content_scripts": [
+    {
+      "matches": ["http://*.pixeljet.localhost/*", "http://*.pixeljet.net/*"],
+      "css": [],
+      "js": ["quickfire-chrome.js"]
+    }
+  ],
+    "icons": {
+        "128": "icon_128.png"
+    },
+
+
+    "manifest_version": 2,
+    "minimum_chrome_version": "17"
+}
