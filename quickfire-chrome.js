@@ -1,7 +1,3 @@
-
-
-
-
 var QuickfireChrome = function() {
 	
 	var self = this;
