@@ -1,7 +1,7 @@
 ﻿{
-    "name": "pixelJET for Chrome™ Developer Tools",
+    "name": "Quickfire for Chrome Developer Tools",
     "version": "0.2",
-    "description": "Integrates the Chrome™ Developer Tools into the pixelJET development environment",
+    "description": "Integrates the Chrome Developer Tools into the pixelJET development environment",
 	"permissions": [
     	"contextMenus"
   	],
