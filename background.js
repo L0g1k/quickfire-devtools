@@ -3,6 +3,11 @@
 var ports = [];
 var content = [];
 var menuItems = [];
+var RDPBridgeClient = new RDPBridgeClient();
+
+RDPBridgeClient.init();
+
+
 
 /**
  * TODO: Either the background page or devtools needs to set the tab id in quickfire. I can't theoretically think of a reason why we'd ever get an incorrect tab id,
@@ -18,9 +23,9 @@ chrome.pageAction.onClicked.addListener(function(tab) {
 		}, 250);
 	});
 });
-var editSource = chrome.contextMenus.create({"title": "Edit Page Source", onclick: genericOnClick}, function(){
+/*var editSource = chrome.contextMenus.create({"title": "Edit Page Source", onclick: genericOnClick}, function(){
 	 menuItems[editSource] = 'edit-source';
-});
+});*/
 // menuKey is just any string we make up to identify what the menu item is supposed to do.
 function genericOnClick(info, tab) {
 //	  console.log("item " + info.menuItemId + " was clicked");
@@ -75,7 +80,11 @@ chrome.extension.onConnect.addListener(function(port) {
 		        		delete ports[tabId];
 		        } 
 		    });
+
+
 		}
+        RDPBridgeClient.connect(tabId, port);
+
 		// listen to requests from devtools, then forward them straight to Quickfire via the content script
 	    if (port.name == "devtools") {
 		   // we need to add the devtools port to our port tracker, but we don't know the right tabId to use yet. The devtools script will send us a message

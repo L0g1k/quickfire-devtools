@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba77674a-13fa-400e-9ab1-a179a65a4459" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\workspace-chrome\quickfire-devtools\pixeljet-chrome.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devtools.html" afterPath="$PROJECT_DIR$/devtools.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/QuickfireDevToolsServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/LiveDevelopment/RDPBridgeClient.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ResourceChangedMessage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/background.js" afterPath="$PROJECT_DIR$/background.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quickfire-chrome.js" afterPath="$PROJECT_DIR$/quickfire-chrome.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\cloud19.png" afterPath="$PROJECT_DIR$/images/cloud19.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\cloud38-down.png" afterPath="$PROJECT_DIR$/images/cloud38-down.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\cloud38.png" afterPath="$PROJECT_DIR$/images/cloud38.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\cloudError19.png" afterPath="$PROJECT_DIR$/images/cloudError19.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\cloudError38.png" afterPath="$PROJECT_DIR$/images/cloudError38.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\codeEditor.png" afterPath="$PROJECT_DIR$/images/codeEditor.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\devtools.js" afterPath="$PROJECT_DIR$/js/devtools-main.js" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\diff_match_patch.js" afterPath="$PROJECT_DIR$/js/diff_match_patch.js" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\icon_128.png" afterPath="$PROJECT_DIR$/images/icon_128.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\icon_32.png" afterPath="$PROJECT_DIR$/images/icon_32.png" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\images.html" afterPath="$PROJECT_DIR$/panel/images.html" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\options.css" afterPath="$PROJECT_DIR$/options/options.css" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\options.html" afterPath="$PROJECT_DIR$/options/options.html" />
-      <change type="MOVED" beforePath="D:\workspace-chrome\quickfire-devtools\options.js" afterPath="$PROJECT_DIR$/options/options.js" />
     </list>
     <ignored path="quickfire-devtools.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368614847568" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369393635903" ignored="false" />
     <file path="/devtools.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368616488686" ignored="false" />
     <file path="/devtools.html" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368615339208" ignored="false" />
     <file path="/Status.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368616062356" ignored="false" />
@@ -34,6 +20,27 @@
     <file path="/ResourceSwapper.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368616002266" ignored="false" />
     <file path="/DevToolsMessage.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368616282882" ignored="false" />
     <file path="/README.md" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368617657413" ignored="false" />
+    <file path="/QuickfireDevToolsClient.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368704665002" ignored="false" />
+    <file path="/ResourceChangedMessage.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368704965858" ignored="false" />
+    <file path="/QuickfireDevToolsServer.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1368705010435" ignored="false" />
+    <file path="/Transport.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369393506272" ignored="false" />
+    <file path="/background.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369403313242" ignored="false" />
+    <file path="/RDPBridgeClient.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369403239294" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/chrome-websocket/websocket-server.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369393741546" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/src/chrome/LiveDevelopment/RDPBridgeServer.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369403609098" ignored="false" />
+    <file path="/RDPBridgeServer.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369403606926" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/src/LiveDevelopment/main.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369397554286" ignored="false" />
+    <file path="/main.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369397553137" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/src/chrome/LiveDevelopment/main.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369397639592" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/chrome-websocket/manifest.json" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369478264891" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/manifest.json" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369478322545" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/src/main.html" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369404655501" ignored="false" />
+    <file path="/main.html" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369404331367" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/chrome-websocket/bundle.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369404632056" ignored="false" />
+    <file path="/bundle.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369404515052" ignored="false" />
+    <file path="$PROJECT_DIR$/../brackets/chrome-webserver/webserver.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369478162505" ignored="false" />
+    <file path="/webserver.js" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369478153434" ignored="false" />
+    <file path="/manifest.json" changelist="ba77674a-13fa-400e-9ab1-a179a65a4459" time="1369478240682" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +63,25 @@
       <file leaf-file-name="devtools-main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/devtools-main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="3" selection-start="856" selection-end="856" vertical-scroll-proportion="-8.5">
+            <state line="25" column="3" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="background.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/background.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="20" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RDPBridgeClient.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/LiveDevelopment/RDPBridgeClient.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="41" selection-start="842" selection-end="842" vertical-scroll-proportion="0.81417626">
               <folding />
             </state>
           </provider>
@@ -65,25 +90,34 @@
       <file leaf-file-name="Communications.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Communications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="42" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
+            <state line="23" column="38" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceSwapper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ResourceSwapper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="9" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.09922179">
+            <state line="13" column="11" selection-start="443" selection-end="443" vertical-scroll-proportion="-2.6153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickfireDevToolsServer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/QuickfireDevToolsServer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceChangedMessage.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ResourceChangedMessage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="31" selection-start="9" selection-end="31" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,46 +136,6 @@
         <entry file="file://$PROJECT_DIR$/quickfire-chrome.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="112" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diff_match_patch.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/diff_match_patch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1351324436000" expanded="false" signature="44394:44413" placeholder="..." />
-                <marker date="1351324436000" expanded="false" signature="44506:44525" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="images.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/panel/images.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevToolsMessage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/DevToolsMessage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="33" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,15 +168,21 @@
         <option value="$PROJECT_DIR$/js/Communications.js" />
         <option value="$PROJECT_DIR$/quickfire-chrome.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/QuickfireDevToolsClient.js" />
+        <option value="$PROJECT_DIR$/lib/ResourceChangedMessage.js" />
+        <option value="$PROJECT_DIR$/lib/QuickfireDevToolsServer.js" />
+        <option value="$PROJECT_DIR$/js/LiveDevelopment/Transport.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/js/LiveDevelopment/RDPBridgeClient.js" />
+        <option value="$PROJECT_DIR$/background.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -239,7 +239,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quickfire-devtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quickfire-devtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quickfire-devtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quickfire-devtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LiveDevelopment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,14 +281,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../brackets" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace-chrome\quickfire-devtools\lib" />
       <recent name="D:\workspace-chrome\quickfire-devtools\js" />
       <recent name="D:\workspace-chrome\quickfire-devtools\panel" />
       <recent name="D:\workspace-chrome\quickfire-devtools\options" />
       <recent name="D:\workspace-chrome\quickfire-devtools\images" />
-      <recent name="D:\workspace-chrome\quickfire-devtools" />
     </key>
   </component>
   <component name="RunManager">
@@ -280,25 +314,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25207546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -362,30 +396,29 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/LogsAndErrors.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="15" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="112" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Status.js">
+    <entry file="file://$PROJECT_DIR$/js/diff_match_patch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="103" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1351324436000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1351324436000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/DevToolsMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Communications.js">
+    <entry file="file://$PROJECT_DIR$/panel/images.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="42" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -397,27 +430,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/devtools.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="112" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/diff_match_patch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1351324436000" expanded="false" signature="44394:44413" placeholder="..." />
-            <marker date="1351324436000" expanded="false" signature="44506:44525" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panel/images.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -429,23 +444,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/devtools-main.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="3" selection-start="856" selection-end="856" vertical-scroll-proportion="-8.5">
+        <state line="1527" column="0" selection-start="26932" selection-end="26932" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devtools.html">
+    <entry file="file://$PROJECT_DIR$/js/devtools-main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="3" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Communications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/QuickfireDevToolsServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ResourceChangedMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="31" selection-start="9" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.09922179">
+        <state line="13" column="11" selection-start="443" selection-end="443" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="20" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/LiveDevelopment/RDPBridgeClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="41" selection-start="842" selection-end="842" vertical-scroll-proportion="0.81417626">
           <folding />
         </state>
       </provider>

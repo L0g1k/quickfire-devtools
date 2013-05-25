@@ -7,12 +7,18 @@
     ],
     "devtools_page": "devtools.html",
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+            "js/LiveDevelopment/RDPBridgeClient.js",
+            "js/Communications.js",
+            "js/LogsAndErrors.js",
+            "js/Status.js",
+            "background.js"
+        ]
     },
     "page_action": {
         "default_icon": {
-            "19": "cloud19.png",
-            "38": "cloud38.png"
+            "19": "images/cloud19.png",
+            "38": "images/cloud38.png"
         },
         "default_title": "Click to save changes"
     },
@@ -24,7 +30,7 @@
         }
     ],
     "icons": {
-        "128": "icon_128.png"
+        "128": "images/icon_128.png"
     },
 
     "manifest_version": 2,
