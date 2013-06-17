@@ -1,10 +1,4 @@
 var chromeApp = true;
-var port = chrome.extension.connect({name:"devtools"});
-var webSocket = new WebSocket("ws://echo.websocket.org");
-
-port.onMessage.addListener(onMessage);
-webSocket.onopen = function (event) { connected() };
-webSocket.onmessage = function(event) { onMessage(event.data) };
 
 function onMessage(message) {
 

@@ -3,7 +3,7 @@
     "version": "0.2",
     "description": "Integrates the Chrome Developer Tools with the pixelJET development environment",
     "permissions": [
-        "contextMenus"
+        "contextMenus", "debugger"
     ],
     "devtools_page": "devtools.html",
     "background": {
