@@ -5,6 +5,13 @@ var content = [];
 var menuItems = [];
 var RDPBridgeClient = new RDPBridgeClient();
 
+// Array Remove - By John Resig (MIT Licensed)
+Array.prototype.remove = function(from, to) {
+    var rest = this.slice((to || from) + 1 || this.length);
+    this.length = from < 0 ? this.length + from : from;
+    return this.push.apply(this, rest);
+};
+
 initialiseEvents();
 
 try {
@@ -23,10 +30,10 @@ function initialiseEvents() {
     // Note that this does not concern the connect to the Chrome App.
 
     chrome.extension.onConnect.addListener(function(port) {
-        var tabId = port.sender.tab.id;
+        var tabId = port.sender.tab ? port.sender.tab.id : -1;
 
         // After a Chrome update, DevTools ports now initialise with their tabId set to -1. I haven't a clue why this is, but in this case we must avoid
-        // these initialisation routines because they simply don't make sense.
+        // some initialisation routines because they simply don't make sense.
 
         if(tabId != -1) {
 
@@ -51,7 +58,7 @@ function initialiseEvents() {
 
 
         }
-        RDPBridgeClient.connect(tabId, port);
+        //RDPBridgeClient.connect(tabId, port);
 
         // listen to requests from devtools, then forward them straight to Quickfire via the content script
         if (port.name == "devtools") {
@@ -70,9 +77,13 @@ function initialiseEvents() {
                 }
             });
 
+            port.onDisconnect.addListener(function(port){
+                RDPBridgeClient.onDevToolsDisconnect(port);
+            });
+
         } else if (port.name == "quickfire-chrome") {
             ports[tabId][port.name] = port;
-
+            RDPBridgeClient.onPageConnect(tabId, port.sender.url);
             try {
                 console.log("New port opened: " + port.name + " from tab " + + tabId + " (" + ports.length + " total)."  , port);
             } catch (e) {}
@@ -107,8 +118,9 @@ function initialiseEvents() {
     function registerDevTools(port, message) {
         var tabId = message.payload.tabId;
         if(tabId) {
-            ports[tabId][port.name] = port;
-            console.log("New devtools port opened: " + port.name + " from tab " + + tabId + " (" + ports.length + " total)."  , port);
+            RDPBridgeClient.onDevToolsConnect(tabId, port);
+            //ports[tabId][port.name] = port;
+            //console.log("New devtools port opened: " + port.name + " from tab " + + tabId + " (" + ports.length + " total)."  , port);
         }
         port.onMessage.addListener(function(message) {
             // Listen to messages from devtools, then forward them straight to Quickfire via the content script
@@ -135,7 +147,7 @@ function initialiseEvents() {
     }
 
     function notifyQuickfire(tabId, messageKey, content) {
-
+        return;
         var message = {
             rx: 'quickfire',
             payload : {

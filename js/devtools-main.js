@@ -4,7 +4,7 @@ var resources = [];
 // If we are setting the resource content because quickfire told us to, then we don't want to fire an onResourceContentComitted event.
 var supressEvents = false;
 
-disconnected();
+//disconnected();
 logMessageInBackgroundPage("DevTools opened; extension code initialising");
 
 notifyBackground({

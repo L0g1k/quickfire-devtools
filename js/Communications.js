@@ -1,5 +1,6 @@
 var chromeApp = true;
 
+var backgroundPort = chrome.extension.connect({name:"devtools"});
 function onMessage(message) {
 
     logMessageInBackgroundPage("Devtools: message received " + message);
@@ -25,7 +26,7 @@ function notifyQuickfire(payload) {
 // Notify the extension 'hub'
 function notifyBackground(payload) {
     // This is in fact the same between the two modes. We just need something from the background page.
-    port.postMessage({
+    backgroundPort.postMessage({
         rx: 'background',
         payload: payload
     });
