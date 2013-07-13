@@ -26,7 +26,7 @@
         {
             "matches": ["http://*.localhost/*", "http://*.pixeljet.net/*"],
             "css": [],
-            "js": ["quickfire-chrome.js"]
+            "js": ["quickfire-chrome.js", "js/LiveDevelopment/RemoteFunctions.js"]
         }
     ],
     "icons": {

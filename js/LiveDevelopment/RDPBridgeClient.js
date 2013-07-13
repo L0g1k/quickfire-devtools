@@ -18,6 +18,7 @@ function RDPBridgeClient() {
         // In this case, the server is telling us that it expects us to be active, and to initialise now.
         chrome.runtime.onConnectExternal.addListener(function(port){
             if(port.name == 'RDPBridgeServer') {
+                self.port = port;
                 _init(port);
             }
         });
@@ -33,7 +34,12 @@ function RDPBridgeClient() {
         function _init(port) {
             console.log("Connected successfully.");
             connected = true;
+
             port.onMessage.addListener(self.handleRemoteDebugMessage.bind(self));
+            port.onDisconnect.addListener(function(){
+                self.port = undefined;
+                console.log("Brackets connection lost")
+            });
         }
 
         // Housekeeping for the debuggers
@@ -42,6 +48,47 @@ function RDPBridgeClient() {
             console.log("Debugger for tab " + debugee.tabId + " disconnected: " + reason);
         });
 
+    }
+
+    this.sendToBrackets = function(message) {
+        if(this.port) {
+            this.port.postMessage(message);
+        } else {
+            console.error("Tried to send a message to Brackets, however the port wasn't open", message);
+        }
+    }
+
+    this.runRemoteCommand = function(message) {
+        var self = this;
+        var tabId = this.getTabId(message);
+        if(!tabId) {
+            console.error("Tab id couldn't be determined for", message);
+            return;
+        }
+        var target = connectedDebuggerTabs[tabId];
+        if(!target) {
+            target = {tabId: tabId};
+            chrome.debugger.attach(
+                target,
+                "1.0",
+                function() {
+                    connectedDebuggerTabs[tabId] = target;
+                    runCommandImpl(target)
+                }
+            );
+        } else
+            runCommandImpl(target);
+
+
+        function runCommandImpl(target) {
+            console.log("Debugger target found; executing command", message);
+            chrome.debugger.sendCommand(target, message.method, message.params, function(result){
+                if(result) {
+                    console.log("Command executed with no errors! Sending result to Brackets", result);
+                    self.sendToBrackets(result);
+                }
+            });
+        }
     }
 
     this.handleRemoteDebugMessage = function(_message) {
@@ -120,37 +167,7 @@ function RDPBridgeClient() {
         }
     }
 
-    this.runRemoteCommand = function(message) {
-        var self = this;
-        var tabId = this.getTabId(message);
-        if(!tabId) {
-            console.error("Tab id couldn't be determined for", message);
-            return;
-        }
-        var target = connectedDebuggerTabs[tabId];
-        if(!target) {
-            target = {tabId: tabId};
-            chrome.debugger.attach(
-                target,
-                "1.0",
-                function() {
-                    connectedDebuggerTabs[tabId] = target;
-                    runCommandImpl(target)
-                }
-            );
-        } else
-            runCommandImpl(target);
 
-
-        function runCommandImpl(target) {
-            console.log("Debugger target found; executing command", message);
-            chrome.debugger.sendCommand(target, message.method, message.params, function(result){
-                  if(result) {
-                      console.log("Command executed with no errors!", result);
-                  }
-            });
-        }
-    }
 
 
     this.emulateRemoteCommand = function (message) {
